@@ -1,0 +1,21 @@
+/* Target all main p element*/
+main div > div > p {
+  color: white;
+  background-color: #007bff;
+  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+main div > div > p a:first-of-type {
+  color: #000;
+}
+
+main div > div > p a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+main div + div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
