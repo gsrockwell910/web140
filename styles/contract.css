@@ -1,8 +1,19 @@
 /* Target all main p element*/
-main div > div > p {
+main div > div {
   color: white;
   background-color: #007bff;
   box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+main div > div > p {
+  padding: 0px;
+  margin: 0px;
+  background-color: #007bff;
+  color: white;
+  margin-bottom: 10px;
 }
 
 main div > div > p a:first-of-type {
