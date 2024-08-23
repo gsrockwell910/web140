@@ -1,4 +1,4 @@
-/* Target all main p element*/
+/* Target first child div of container div in main */
 main div > div:first-of-type {
   color: white;
   background-color: #007bff;
