@@ -1,7 +1,7 @@
 /* Target first child div of container div in main */
 main div > div:first-of-type {
-  color: white;
-  background-color: #007bff;
+  color: #F0E3C7;
+  background-color: #2D6A4F;
   box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   padding: 10px;
   margin: 5px;
@@ -11,17 +11,17 @@ main div > div:first-of-type {
 main div > div > p {
   padding: 0px;
   margin: 0px;
-  background-color: #007bff;
-  color: white;
+  background-color: #2D6A4F;
+  color: #F0E3C7;
   margin-bottom: 10px;
 }
 
 main div > div > p a:first-of-type {
-  color: #000;
+  color: #D67D3D;
 }
 
 main div > div > p a:hover {
-  color: white;
+  color: #F0E3C7;
   text-decoration: underline;
 }
 
