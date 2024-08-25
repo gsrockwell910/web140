@@ -77,7 +77,6 @@ nav {
   min-width: 100%;
   display: flex;
   justify-content: space-evenly;
-  padding: 10px 0; /* Added padding to ensure proper spacing */
 }
 
 nav ul {
@@ -85,11 +84,10 @@ nav ul {
   margin: 0;
   padding: 0;
   text-align: center;
-  display: flex; /* Make the list items align horizontally */
 }
 
 nav ul li {
-  margin: 0; /* Ensure no additional margin on list items */
+  display: inline;
 }
 
 nav ul li a {
