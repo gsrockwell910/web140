@@ -144,15 +144,15 @@ footer {
 
 /* Footer link styles */
 footer div a:first-of-type {
-  color: #F8F4F1; /* Lighter text color */
+  color: #1F2A38; /* Lighter text color */
 }
 
 footer div a:first-of-type:visited {
-  color: #E4FDE1; /* Darker color for visited footer links */
+  color: #582630; /* Darker color for visited footer links */
 }
 
 footer div:nth-of-type(2) a {
-  color: #F8F4F1; /* Lighter text color */
+  color: #1F2A38; /* Lighter text color */
   border-left: 2px solid #1F2A38; /* More contrasting border color */
   border-right: 2px solid #1F2A38; /* More contrasting border color */
   padding: 0px 5px;
@@ -161,5 +161,5 @@ footer div:nth-of-type(2) a {
 }
 
 footer div:nth-of-type(2) a:visited {
-  color: #E4FDE1; 
+  color: #582630; 
 }
