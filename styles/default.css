@@ -63,12 +63,12 @@ a:hover {
 
 /* Visited state of links */
 a:visited {
-  color: #F8F4F1; /* Darker shade for visited links */
+  color: #F8F4F1; 
 }
 
 /* Active state of links (when clicked) */
 a:active {
-  color: #1F2A38; /* Darker color when clicked */
+  color: #113537; /* Darker color when clicked */
   text-decoration: underline; 
 }
 
@@ -97,7 +97,7 @@ nav ul li a {
   color: #F8F4F1; /* Lighter text color for better contrast */
   text-decoration: none;
   font-size: 1.2em;
-  background-color: #1F2A38; /* More vibrant background color for nav items */
+  background-color: #1F2A38; /* More vibrant background color for nav items  #5B9BD5*/
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -116,7 +116,6 @@ main {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  flex-direction: column;
   flex: 1;
   height: 100vh; /* Full viewport height */
   margin: 0; /* Remove default margin */
@@ -139,18 +138,20 @@ footer {
   padding: 10px;
   margin-top: auto; /* Pushes the footer to the bottom */
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Footer link styles */
-footer a:first-of-type {
+footer div a:first-of-type {
   color: #F8F4F1; /* Lighter text color */
 }
 
-footer a:first-of-type:visited {
-  color: #113537; /* Darker color for visited footer links */
+footer div a:first-of-type:visited {
+  color: #E4FDE1; /* Darker color for visited footer links */
 }
 
-footer a:not(:first-of-type) {
+footer div:nth-of-type(2) a {
   color: #F8F4F1; /* Lighter text color */
   border-left: 2px solid #1F2A38; /* More contrasting border color */
   border-right: 2px solid #1F2A38; /* More contrasting border color */
@@ -159,6 +160,6 @@ footer a:not(:first-of-type) {
   max-width: 100%;
 }
 
-footer a:visited {
-  color: #113537;
+footer div:nth-of-type(2) a:visited {
+  color: #E4FDE1; 
 }
