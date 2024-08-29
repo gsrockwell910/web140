@@ -23,6 +23,10 @@ body {
   min-height: 100vh;
 }
 
+[data-include]{
+  min-height: 100px;
+}
+
 /* Header styling */
 header {
   background-color: #9E9D80; /* Slightly darker background for better contrast */
