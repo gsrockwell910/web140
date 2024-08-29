@@ -6,7 +6,7 @@ body > div {
 main {
   display: flex;
   flex-direction: column;
-  /*margin: 1% 0%;*/
+  margin-bottom: 1%;
   min-height: 100vh;
 }
 
@@ -15,17 +15,20 @@ main > div:first-of-type {
   color: #F8F4F1;
   background-color: #1F2A38;
   box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  padding: 20px;
-  margin: 1% 0%;
+  padding: 2%;
   border-radius: 10px;
 }
 
+main div {
+  margin-top: 1%;
+}
+
 main div > p {
-  padding: 0px;
-  margin: 0px;
+  padding: 0%;
+  margin: 0%;
   background-color: #1F2A38;
   color: #F8F4F1;
-  margin-bottom: 10px;
+  margin-bottom: 2%;
 }
 
 body > div > main > div:nth-child(1) > p:nth-child(1) > a:nth-child(1) {
@@ -40,12 +43,12 @@ body > div > main > div:nth-child(1) > p:nth-child(1) > a:nth-child(1):hover {
 body > div:nth-child(3) > main > p {
   background-color: #F8F4F1;
   color: #1F2A38;
-  margin: 0px;
-  padding: 0px;
+  padding: 0%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
+  margin-bottom: 2%;
+  margin-top: 0%;
 }
 
 div  main > div > div:nth-child(4) {
@@ -56,7 +59,6 @@ div  main > div > div:nth-child(4) {
 
 body > div:nth-child(3) > main > a > img {
   border: 3px solid #FFD400;
-  margin-bottom: 10px;
   border-radius: 10px;
   max-width: 80vw;
 }
