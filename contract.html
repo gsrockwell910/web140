@@ -10,20 +10,10 @@
 </head>
 
 <body>
-    <header>
-            <h1>Gavin Rockwell's Grazing Rhino</h1>
-            <h2>web140 Course Contract</h2>
-    </header>
-    <!-- Consider/look into making components -->
-    <nav>
-        <ul>
-          <li><a href="https://gsrockwell910.github.io/">Directory</a></li>
-          <!--<li><a href="index.html">Index</a></li>-->
-          <!--<li><a href="introduction.html">Introduction</a></li>-->
-          <li><a href="contract.html">Contract</a></li>
-          <!--<li><a href="#">Brand</a></li>-->
-        </ul>
-    </nav>
+
+  <div data-include="components/header.html" data-replace="%pageTitle%">
+  </div>
+
     <div>
       <main>
         <div>
@@ -67,20 +57,10 @@
         </div>
     </main>
   </div>
-    <footer> 
-    <div>
-      <em>web140 Web Development Tools</em>.
-       <br>Created by &copy;<a href="https://github.com/gsrockwell910" target="_blank">gsrockwell910</a>
-    </div>
-    <div>
-       <br><a href="https://github.com/gsrockwell910" target="_blank">GitHub</a>
-       <a href="https://gsrockwell910.github.io/" target="_blank">GitHub.io</a>
-       <a href="https://gsrockwell910.github.io/web140/" target="_blank">web140.io</a>
-       <a href="http://www.linkedin.com/in/gsrockwell910/" target="_blank">LinkedIn</a>
-       <a href="https://jsfiddle.net/gsrockwell910/de3wLr49/" target="_blank">JSFiddle</a>
-       <a href="https://www.codecademy.com/profiles/GSRockwell910" target="_blank">Codecademy</a>
-       <a href="https://www.freecodecamp.org/GSRockwell910" target="_blank">freeCodeCamp</a>
-    </div>
-    </footer>
+   
+  <div data-include="components/footer.html">
+  </div>
+
+  <script src="scripts/HTMLInclude.js"></script>
 </body>
 </html>
