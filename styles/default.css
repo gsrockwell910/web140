@@ -131,7 +131,7 @@ main {
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   flex: 1;
-  height: 100vh; /* Full viewport height */
+  height: 100%; /* Full viewport height */
   margin: 0; /* Remove default margin */
 }
 
