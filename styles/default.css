@@ -135,6 +135,13 @@ main {
   margin: 0; /* Remove default margin */
 }
 
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 p {
   font-size: 1.1em; 
   line-height: 1.2em; 
