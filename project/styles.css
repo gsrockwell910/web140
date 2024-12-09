@@ -1,0 +1,49 @@
+body {
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  font-family: Arial, sans-serif;
+}
+
+header {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  border-bottom: 2px solid #ffeb3b;
+  padding-bottom: 10px;
+}
+
+.card {
+  border: 2px solid #ffeb3b;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(255, 235, 59, 0.5);
+}
+
+.btn-warning {
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn-warning:hover {
+  background: #fbc02d;
+  transform: scale(1.05);
+}
+
+footer {
+  background: #282828;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .nav {
+        flex-direction: column;
+    }
+    .card {
+        margin-bottom: 15px;
+    }
+}

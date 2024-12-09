@@ -1,60 +1,167 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Gavin Rockwell | Portfolio Site</title>
-    <link rel="stylesheet" type="text/css" href="..//styles/default.css">
-    <link rel="shortcut icon" type="x-icon/png" href="/images/rhino_icon.png?">
+    <meta name="description" content="Gavin Rockwell's portfolio showcasing projects, skills, and contact information.">
+    <meta name="author" content="Gavin Rockwell">
+    <title>Gavin Rockwell | Portfolio</title>
+    <link rel="shortcut icon" type="x-icon" href="onepage_images/coffee-cup.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="onepage_styles/onepage_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
+<body class="bg-dark text-light">
 
-<body>
+<header class="text-center py-5">
+    <h1 class="display-4 text-warning animated fadeInDown">Gavin Rockwell</h1>
+    <p class="lead">Aspiring Java Developer</p>
+    <nav>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link text-warning" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-warning" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-warning" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-warning" href="#contact">Contact</a>
+            </li>
+            <!-- Dropdown Item -->
+            <li class="nav-item dropdown">
+                <a class="nav-link text-warning dropdown-toggle dropdownButton" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="toggleMenu()">
+                    More
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
+                    <a class="dropdown-item" href="#blog">Blog</a>
+                    <a class="dropdown-item" href="#resume">Resume</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
 
-  <!--<div data-include="/components/header.html" data-replace="%mainTitle%: Gavin Rockwell, %pageTitle%: Portfolio Site">
-  </div>-->
-  <header>
-    <h1>Gavin Rockwell<!--Gavin Rockwell's Grazing Rhino--></h1>
-    <h2>Portfolio</h2>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#">Link1</a></li>
-      <li><a href="#">Link2</a></li>
-      <!--<li><a href="introduction.html">Introduction</a></li>-->
-      <!--<li><a href="contract.html">Contract</a></li>-->
-      <!--<li><a href="#">Brand</a></li>-->
-    </ul>
-  </nav>
+<div class="container">
+    <section id="about" class="my-5">
+        <h2 class="text-warning">About Me</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Profile Image -->
+                <img src="images/pic_of_me.jpeg" alt="Gavin Rockwell" class="img-fluid rounded-circle shadow-lg">
+            </div>
+            <div class="col-md-8">
+                <p>Hi! I'm an enthusiastic software developer graduating in 2025. I have 2+ years of academic-level software development experience in Java, MySQL/SQL, and various Java-based tools. I'm eager to tackle new challenges and deliver user-friendly solutions.</p>
+                <p>I'm passionate about clean code, user experience, and creating scalable software solutions. Outside of coding, I enjoy hiking, gaming, and exploring new technologies!</p>
+                
+                <!-- Animated Image (GIF) -->
+                <img src="images/dev_gif.gif" alt="Animated GIF" class="img-fluid my-3">
+            </div>
+        </div>
+    </section>
 
-  <div>
-    <main>
-      <figure>
-        <img src="/images/gsr910.jpg" alt="A QR Code linking to my github." title="A QR Code linking to GitHub.">
-        <h1>
-            <figcaption>Scan to checkout my GitHub!</figcaption>
-        </h1>
-    </figure>
-    </main>
-  </div>
-   
-  <!--<div data-include="/components/footer.html">
-  </div>-->
-  <footer> 
-    <div>
-      <em>web140 Web Development Tools</em>.
-       <br>Created by &copy;<a href="https://github.com/gsrockwell910" target="_blank">gsrockwell910</a>
-    </div>
-    <div>
-       <br><a href="https://github.com/gsrockwell910" target="_blank">GitHub</a>
-       <a href="https://gsrockwell910.github.io/" target="_blank">GitHub.io</a>
-       <a href="https://gsrockwell910.github.io/web140/" target="_blank">web140.io</a>
-       <a href="http://www.linkedin.com/in/gsrockwell910/" target="_blank">LinkedIn</a>
-       <a href="https://jsfiddle.net/gsrockwell910/de3wLr49/" target="_blank">JSFiddle</a>
-       <a href="https://www.codecademy.com/profiles/GSRockwell910" target="_blank">Codecademy</a>
-       <a href="https://www.freecodecamp.org/GSRockwell910" target="_blank">freeCodeCamp</a>
-    </div>
-  </footer>
+    <section id="projects" class="my-5">
+        <h2 class="text-warning">Projects</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4 bg-secondary text-light shadow-lg border-warning">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Calculator</h5>
+                        <p class="card-text">A functioning calculator created using HTML, CSS, and JavaScript. This project taught me how to combine my web development skills to create interesting webpages.</p>
+                        <a href="https://gsrockwell910.github.io/calculator/" class="btn btn-warning" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4 bg-secondary text-light shadow-lg border-warning">
+                    <div class="card-body">
+                        <h5 class="card-title">Insurance Policy App</h5>
+                        <p class="card-text">A simple insurance policy application I made for school. This project taught me how to use Java to develop simple applications, as well as how to work with files in Java.</p>
+                        <a href="https://github.com/gsrockwell910/InsurancePolicyProject" class="btn btn-warning" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <!--<script src="/scripts/HTMLInclude.js"></script>-->
-</body>
-</html>
+        <!-- Inline Image in Project -->
+        <div class="text-center my-4">
+          <p>My most recent project: </p>
+            <img src="images/mrp_ss.png" alt="Project Inline Image" class="img-fluid">
+        </div>
+    </section>
+
+    <section id="skills" class="my-5">
+        <h2 class="text-warning">Skills</h2>
+        <ul class="list-group">
+            <li class="list-group-item bg-secondary">Java</li>
+            <li class="list-group-item bg-secondary">Java Swing</li>
+            <li class="list-group-item bg-secondary">JavaFX</li>
+            <li class="list-group-item bg-secondary">Java Spring</li>
+            <li class="list-group-item bg-secondary">MySQL/SQL</li>
+            <li class="list-group-item bg-secondary">HTML</li>
+            <li class="list-group-item bg-secondary">CSS</li>
+            <li class="list-group-item bg-secondary">JavaScript</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="my-5">
+        <h2 class="text-warning">Contact Me</h2>
+        <p>If you’d like to get in touch, feel free to reach out via email at <a href="mailto:gsrockwell910@gmail.com" class="text-warning">Gsrockwell910@gmail.com</a>.</p>
+
+        <!-- Contact Form with multiple field sets -->
+        <form action="#" method="POST" class="bg-secondary p-4 rounded">
+            <fieldset>
+                <legend class="text-warning">Personal Information</legend>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="text-warning">Message</legend>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                </div>
+            </fieldset>
+            <button type="submit" class="btn btn-warning">Submit</button>
+        </form>
+    </section>
+
+    <section id="blog" class="my-5">
+        <h2 class="text-warning">Blog</h2>
+        <p>Here I'll be sharing articles and tips on Java development, software engineering practices, and industry insights.</p>
+    </section>
+
+    <section id="resume" class="my-5">
+        <h2 class="text-warning">Resume</h2>
+        <p><a href="resume_august_2024_updated.pdf" class="btn btn-warning" target="_blank">Download my Resume</a></p>
+    </section>
+
+    <!-- Video with audio -->
+    <section id="video" class="my-5">
+        <h2 class="text-warning">Inspiration Video</h2>
+        <iframe width="930" height="547" src="https://www.youtube.com/embed/LfaMVlDaQ24?si=4eyGIvZ-gF8_7PBn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+</div>
+
+<footer class="text-center py-4 bg-dark">
+    <p>&copy; 2024 Gavin Rockwell. All Rights Reserved.</p>
+</footer>
+
+<!-- jQuery (Full version) -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<!-- Popper.js (Bootstrap requires this for dropdowns) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath
